@@ -9,7 +9,6 @@ dotenv_path = '../.env'
 load_dotenv(dotenv_path)
 
 openai_api_key = os.getenv("OPEN_AI_API_KEY")
-print('key: ', openai_api_key)
 
 config_list = [
     {   
