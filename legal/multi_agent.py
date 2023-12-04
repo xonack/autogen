@@ -6,17 +6,22 @@ from dotenv import load_dotenv
 
 dotenv_path = '../.env' 
 load_dotenv(dotenv_path)
+
+openai_api_key = os.getenv("OPEN_AI_API_KEY")
+
+print('key: ', openai_api_key)
+
 config_list_gpt4 = [
     {   
         'model': 'gpt-4',
-        'api_key': os.getenv("OPEN_AI_API_KEY"),
+        'api_key': openai_api_key,
     }
 ]
 
 config_list_gpt35 = [
     {   
         'model': 'gpt-3.5-turbo-16k',
-        'api_key': os.getenv("OPEN_AI_API_KEY"),
+        'api_key': openai_api_key,
     }
 ]
 
