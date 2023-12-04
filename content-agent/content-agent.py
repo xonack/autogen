@@ -14,12 +14,13 @@ from langchain.prompts import PromptTemplate
 import openai
 from dotenv import load_dotenv
 
-load_dotenv()
+dotenv_path = '../.env' 
+load_dotenv(dotenv_path)
 browserless_api_key = os.getenv("BROWSERLESS_API_KEY")
 serper_api_key = os.getenv("SERP_API_KEY")
-openai_api_key = os.getenv("OPENAI_API_KEY")
+OPEN_AI_API_KEY = os.getenv("OPEN_AI_API_KEY")
 
-openai.api_key = openai_api_key
+openai.api_key = OPEN_AI_API_KEY
 
 config_list_gpt4 = [
     {   

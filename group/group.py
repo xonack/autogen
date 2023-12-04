@@ -8,7 +8,7 @@ load_dotenv(dotenv_path)
 config_list = [
     {   
         'model': 'gpt-4',
-        'api_key': os.getenv("OPENAI_API_KEY"),
+        'api_key': os.getenv("OPEN_AI_API_KEY"),
     }
 ]
 
