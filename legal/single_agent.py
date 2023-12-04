@@ -11,7 +11,7 @@ config_list = [
 
 llm_config = {
     "request_timeout": 600,
-    "seed": 42,
+    "seed": 1,
     "config_list": config_list,
     "temperature": 0,
 }
@@ -32,7 +32,7 @@ reviewer = autogen.AssistantAgent(
     )
 
 user_proxy = autogen.UserProxyAgent(
-    "client", 
+    "EU Law Expert", 
     human_input_mode="TERMINATE",
     max_consecutive_auto_reply=3,
     is_termination_msg=lambda x: x.get("content", "").rstrip().endswith("TERMINATE"),
