@@ -24,13 +24,13 @@ config_list_gpt35 = [
 ]
 
 llm_config_gpt4 = {
-    "request_timeout": 600,
+    "timeout": 600,
     "seed": 42,
     "temperature": 0,
     "config_list": config_list_gpt4, 
 }
 llm_config_gpt35 = {
-    "request_timeout": 600,
+    "timeout": 600,
     "seed": 42,
     "temperature": 0,
     "config_list": config_list_gpt35,
