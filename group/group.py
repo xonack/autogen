@@ -1,9 +1,14 @@
 import autogen
+import os
+from dotenv import load_dotenv
+
+dotenv_path = '../.env' 
+load_dotenv(dotenv_path)
 
 config_list = [
     {   
         'model': 'gpt-4',
-        'api_key': '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',
+        'api_key': os.getenv("OPENAI_API_KEY"),
     }
 ]
 

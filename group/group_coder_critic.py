@@ -1,16 +1,21 @@
 import autogen
+import os
+from dotenv import load_dotenv
+
+dotenv_path = '../.env' 
+load_dotenv(dotenv_path)
 
 config_list_gpt4 = [
     {   
         'model': 'gpt-4',
-        'api_key': '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',
+        'api_key': os.getenv("OPENAI_API_KEY"),
     }
 ]
 
 config_list_gpt35 = [
     {   
         'model': 'gpt-3.5-turbo-16k',
-        'api_key': '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',
+        'api_key': os.getenv("OPENAI_API_KEY"),
     }
 ]
 
